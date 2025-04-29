@@ -1,0 +1,182 @@
+
+.home-container {
+    font-family:"Arial", sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+    margin: 0;
+    padding: 0;
+    
+    color: #333;
+  }
+  marquee{
+    font-size: 20px;
+    color:blue;
+  }
+  .img-slider {
+    margin-top: 0.5rem;
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    }
+    .img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 8s infinite;
+    }
+    .img-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+   
+    float: left;
+    overflow: hidden
+    }
+    .img-slider .slider-container .slide img {
+      display: block;
+      margin-left: 7rem;
+     
+
+      width: 85%; /* Ensure it scales properly */
+      height: 90%; /* Match the container */
+     /* Maintains aspect ratio */
+    }
+    @keyframes slider {
+      0%, 25%, 100%{left: 0}
+      
+      30%, 55%{left: -100%}
+      
+      60%, 85%{left: -200%}
+      }
+  
+  
+  
+  
+  
+  
+  .hero-section {
+    
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 0;
+    
+   
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  
+  .about-us {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  .events{
+    margin-top: 1rem;
+  }
+  
+  
+  .events h2 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-item {
+    background-color: white;
+    padding: 20px;
+    margin-left: 5rem;
+    margin-right: 6rem;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .eventii{
+    padding: 18px;
+    margin-left: 6rem;
+    margin-right: 7rem;
+  }
+  .eventii p{
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+
+  }
+  .eventii a{
+    
+    margin-top: 3rem;
+    margin-left: 34rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    
+    background-color: #007BFF;
+    color: white;
+  }
+  .eventii a :hover{
+    color: red;
+  }
+  .event-item h3 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  .event-item p {
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 40px 20px;
+    background-color:rgb(125, 122, 122);
+    color: black;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  

@@ -1,0 +1,103 @@
+
+
+.Gallerypage {
+    padding: 2rem;
+    background-color: #f3f4f6;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .services {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .services h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 1 calc(33.333% - 1rem); /* 3 cards per row, adjusts dynamically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 1rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .counselor-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #3498db;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin: 1rem 0 0.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem 1rem;
+    text-align: justify;
+  }
+  
+  @media (max-width: 992px) {
+    .card {
+      flex: 0 1 calc(50% - 1rem); /* 2 cards per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 1 calc(100% - 1rem); /* 1 card per row for mobile */
+    }
+  
+    .services h2 {
+      font-size: 2rem;
+    }
+  
+    .card h3 {
+      font-size: 1.25rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
+  
