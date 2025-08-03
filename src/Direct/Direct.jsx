@@ -147,8 +147,7 @@ const Direct = () => {
           <tr>
             <th>Name</th>
             <th>Email</th>
-            <th>Company</th>
-            <th>Role</th>
+           
             <th>Actions</th>
           </tr>
         </thead>
@@ -157,8 +156,7 @@ const Direct = () => {
             <tr key={member.id}>
               <td>{member.name}</td>
               <td>{member.email}</td>
-              <td>{member.company}</td>
-              <td>{member.role}</td>
+             
               <td>
                 <button onClick={() => handleRead(member)}>Read</button>
                 <button onClick={() => handleUpdate(member)}>Update</button>
@@ -176,8 +174,7 @@ const Direct = () => {
               <h3>Member Details</h3>
               <p><strong>Name:</strong> {selectedMember.name}</p>
               <p><strong>Email:</strong> {selectedMember.email}</p>
-              <p><strong>Company:</strong> {selectedMember.company}</p>
-              <p><strong>Role:</strong> {selectedMember.role}</p>
+             
               <button onClick={() => setIsModalOpen(false)}>Close</button>
             </div>
           )}
@@ -205,26 +202,7 @@ const Direct = () => {
                   required
                 />
               </div>
-              <div className="form-group">
-                <label>Company:</label>
-                <input
-                  type="text"
-                  name="company"
-                  value={selectedMember.company}
-                  onChange={(e) => setSelectedMember({ ...selectedMember, company: e.target.value })}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label>Role:</label>
-                <input
-                  type="text"
-                  name="role"
-                  value={selectedMember.role}
-                  onChange={(e) => setSelectedMember({ ...selectedMember, role: e.target.value })}
-                  required
-                />
-              </div>
+              
               <button type="submit">Save</button>
               <button onClick={() => setIsModalOpen(false)}>Cancel</button>
             </form>
