@@ -1,0 +1,43 @@
+/* General styling for the gallery */
+.gallery-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid layout for the images */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  /* Individual gallery item styling */
+  .gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Styling for the images */
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect on images */
+  .gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  

@@ -1,0 +1,67 @@
+/* Membership.css */
+.membership-form {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  
+}
+.aa{
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+}
+
+marquee {
+  color: blue;
+}
+
+.membership-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.phone-number-container {
+  display: flex;
+  align-items: center;
+}
+
+.phone-number-container select {
+  width: 30%;  /* Adjusted to a smaller width for the dropdown */
+  margin-right: 10px;  /* Space between the dropdown and phone number input */
+}
+
+.phone-number-container input {
+  width: 60%;  /* Adjusted to 60% of the container width */
+}
+
+button {
+  width: 300%;  /* Adjusted button width */
+ margin: 0 auto;  /* Centers the button horizontally */
+  padding: 10px;
+  background-color: rgb(103, 170, 233);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+

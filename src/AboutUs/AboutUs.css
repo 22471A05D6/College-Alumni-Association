@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+}
+
+.events-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%; /* Adjusts to the screen's width */
+  height: 400px; /* Fixed height, adjust as needed */
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: slide 9s infinite;
+}
+
+.carousel-item {
+  flex: 1;
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 100% { transform: translateX(0); }
+}
+
+
+
+
+/* Content */
+.events-content {
+  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Alumni Section */
+.association-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 2rem;
+}
+
+.members-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.member-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Alumni Speaks */
+.alumni-speaks {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.alumni-speaks h2 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.alumni-speaks p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
